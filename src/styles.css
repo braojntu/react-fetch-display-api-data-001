@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.App > h1 {
+  margin-bottom: 5px;
+}
+
+.App > h2 {
+  margin-top: 5px;
+  opacity: 0.7;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.fetch-button {
+  min-width: 150px;
+  margin-bottom: 30px;
+  padding: 15px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: darkcyan;
+  border: none;
+  color: white;
+  transition: all 0.5s;
+}
+
+.fetch-button:hover {
+  background-color: darkmagenta;
+}
+
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 5px;
+  width: 30%;
+  color: white;
+  flex-basis: width;
+  background-color: darkcyan;
+  border: 2px solid darkcyan;
+}
+
+p {
+  margin: 4px;
+}
+
+.book-header {
+  background-color: white;
+  color: black;
+  height: 33%;
+}
+
+.book h3 {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.book h2 {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+
+.book-details {
+  text-align: left;
+  padding: 20px;
+  height: 67%;
+}
+
+@media only screen and (max-width: 600px) {
+  .book h2 {
+    font-size: 1rem;
+  }
+  .book h3 {
+    font-size: 0.75rem;
+  }
+}
